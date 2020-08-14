@@ -17,7 +17,7 @@
         }, {
             "question": "What three mountains comprise the Three Peaks challenge?",
             "type": "multiple-answer",
-            "answers": ["Ben Nevis", "Scarfell Pike", "Snowdonia"]
+            "answers": ["Ben Nevis", "Scafell Pike", "Snowdonia"]
         }, {
             "question": "What cocktail is made with Tomato Juice, Tabasco and Vodka?",
             "type": "short-answer",
