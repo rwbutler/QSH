@@ -15,6 +15,7 @@ Table of contents:
 - [Features](#features)
 	- [Supported Features](#supported-features)
 	- [Upcoming Features](#upcoming-features)
+- [Installation](#installation)
 - [Usage](#usage)
 	- [Packaging a Quiz](#packaging-a-quiz)
 	- [Play a Quiz](#play-a-quiz)
@@ -38,6 +39,14 @@ Table of contents:
 - [ ] Automatic marking
 - [ ] Multiple answer questions
 - [ ] Multiple choice questions
+
+## Installation
+
+To install via [Homebrew](https://brew.sh) run the following command from the Terminal:
+
+```bash
+brew install rwbutler/tools/qsh
+```
 
 ## Usage
 
