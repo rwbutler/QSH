@@ -39,29 +39,29 @@ Table of contents:
 
 ### Packaging a Quiz
 
-```swift
+```bash
 qsh package-quiz --input file://<path to quiz JSON> --encrypt-package --key <encryption key> --output file://<path to quiz package>
 ```
 
 ### Play a Quiz
 
-```swift
+```bash
 qsh play-quiz --url <quiz package URL> --key <encryption key>  
 ```
 
 ### Help
 
-```swift
+```bash
 qsh --help
 ```
 
 Or to get help on a specific subcommand:
 
-```swift
+```bash
 qsh package-quiz --help
 ```
 
-```swift
+```bash
 qsh play-quiz --help
 ```
 
