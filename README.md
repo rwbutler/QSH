@@ -12,6 +12,7 @@ This package is considered work in progress until reaching version 1.0.0.
 
 Table of contents:
 
+- [Quickstart](#quickstart)
 - [Features](#features)
 	- [Supported Features](#supported-features)
 	- [Upcoming Features](#upcoming-features)
@@ -24,6 +25,20 @@ Table of contents:
 - [Additional Software](#additional-software)
 	- [Frameworks](#frameworks)
 	- [Tools](#tools)
+
+## Quickstart
+
+To play an example quiz:
+
+```bash
+qsh --url "https://raw.githubusercontent.com/rwbutler/QSH/master/examples/example.quiz" --key "A%D*F-JaNdRgUkXp2s5v8y/B?E(H+KbP"
+```
+
+To package an example quiz:
+
+```bash
+ qsh package-quiz --input "https://raw.githubusercontent.com/rwbutler/QSH/master/examples/quiz.json" --encrypt-package --key "A%D*F-JaNdRgUkXp2s5v8y/B?E(H+KbP" --output "file://<output path>"
+```
 
 ## Features
 
