@@ -1,0 +1,253 @@
+{
+    "title": "The Quiz",
+    "marking": "none",
+    "rounds": [{
+        "name": "Setup",
+        "questions": [{
+            "question": "Enter your name:",
+            "type": "short-answer",
+            "answer": "Any"
+        }]
+    }, {
+        "name": "General Knowledge Round 🌍",
+        "questions": [{
+            "question": "Name the protagonist in the Back to the Future series of movies.",
+            "type": "short-answer",
+            "answer": "Marty McFly"
+        }, {
+            "question": "What three mountains comprise the Three Peaks challenge?",
+            "type": "multiple-answer",
+            "answers": ["Ben Nevis", "Scarfell Pike", "Snowdonia"]
+        }, {
+            "question": "What cocktail is made with Tomato Juice, Tabasco and Vodka?",
+            "type": "short-answer",
+            "answer": "Bloody Mary"
+        }, {
+            "question": "The Tour De France ends in which city?",
+            "type": "short-answer",
+            "answer": "Paris"
+        }, {
+            "question": "In which city can the Liberty Bell be found?",
+            "type": "multiple-choice",
+            "answer": "Philadelphia",
+            "choices": [
+                "New York",
+                "Boston",
+                "Philadelphia",
+                "Washington, D.C."
+            ]
+        }, {
+            "question": "Name three land-locked European countries?",
+            "type": "multiple-answer",
+            "scoring": [{
+                "answers": 3,
+                "awards": 1,
+                "awarded-for": "all-correct"
+            }],
+            "answers": [
+                "Andorra",
+                "Austria",
+                "Belarus",
+                "Czech Republic",
+                "Hungary",
+                "Liechtenstein",
+                "Luxembourg",
+                "Macedonia",
+                "Moldova",
+                "San Marino",
+                "Serbia",
+                "Slovakia",
+                "Switzerland",
+                "Vatican City"
+            ]
+        }]
+    }, {
+        "name": "London Round 🇬🇧",
+        "questions": [{
+            "question": "Which tube line terminates at West Ruislip?",
+            "type": "short-answer",
+            "answer": "Central"
+        }, {
+            "question": "Which country donates the Trafalgar Square Christmas tree each year as a thanks for British efforts in WWII?",
+            "type": "short-answer",
+            "answer": "Norway"
+        }, {
+            "question": "What’s the airport code for London Heathrow?",
+            "type": "short-answer",
+            "answer": "LHR"
+        }, {
+            "question": "What’s the real name of the Walkie Talkie building?",
+            "type": "short-answer",
+            "answer": "20 Fenchurch Street"
+        }, {
+            "question": "How many ravens are there in the Tower of London?",
+            "type": "short-answer",
+            "answer": "7"
+        }, {
+            "question": "Name the tower that houses Big Ben?",
+            "type": "short-answer",
+            "answer": "Elizabeth Tower"
+        }, {
+            "question": "In which borough would you find Pentonville prison?",
+            "type": "short-answer",
+            "answer": "Islington"
+        }, {
+            "question": "Which famous talkshow host was born in the London Underground?",
+            "type": "short-answer",
+            "answer": "Jerry Springer"
+        }, {
+            "question": "Which sport is played at Lord’s?",
+            "type": "short-answer",
+            "answer": "Cricket"
+        }, {
+            "question": "Which London Underground station is named after a football team?",
+            "type": "short-answer",
+            "answer": "Arsenal"
+        }]
+    }, {
+        "name": "Technology Round 🤖",
+        "questions": [{
+            "question": "Name the other two founders of Apple along with Steve Jobs?",
+            "type": "multiple-answer",
+            "answers": [
+                "Steve Wosniak",
+                "Ronald Wayne"
+            ]
+        }, {
+            "question": "What does ADSL stand for?",
+            "type": "short-answer",
+            "answer": "Asymmetric Digital Subscriber Line"
+        }, {
+            "question": "Which website, particularly popular in the Noughties, was born from an idea invented by Steve and Julie Pankhurst from Barnet, North London?",
+            "type": "short-answer",
+            "answer": "Friends Reunited"
+        }, {
+            "question": "To which country does the top-level domain .mc belong?",
+            "type": "short-answer",
+            "answer": "Monaco"
+        }, {
+            "question": "Which science-fiction writer devised the Three Laws of Robotics?",
+            "type": "short-answer",
+            "answer": "Isaac Asimov"
+        }, {
+            "question": "In which U.S. state are the headquarters of Microsoft?",
+            "type": "short-answer",
+            "answer": "Washington"
+        }, {
+            "question": "Written in 1990, ‘Archie’ was the first ever what?",
+            "type": "short-answer",
+            "answer": "Internet Search Engine"
+        }, {
+            "question": "An SD card is a memory card format frequently used in portable devices such as mobile phones and cameras – what does SD stand for?",
+            "type": "short-answer",
+            "answer": "Secure Digital"
+        }, {
+            "question": "A bit is the smallest possible unit of data in a computer, what does it stand for?",
+            "type": "short-answer",
+            "answer": "Binary Digit"
+        }, {
+            "question": "What are the first names of Nintendo’s Super Mario Brothers?",
+            "type": "short-answer",
+            "answer": "Mario and Luigi"
+        }]
+    }, {
+        "name": "Text Round 📱",
+        "questions": [{
+            "question": "What is the abbreviation TYVM short for?",
+            "type": "short-answer",
+            "answer": "Thank you very much"
+        }, {
+            "question": "What is the abbreviation B4N short for?",
+            "type": "short-answer",
+            "answer": "Bye for now"
+        }, {
+            "question": "What is the abbreviation ROTFLMAO short for?",
+            "type": "short-answer",
+            "answer": "Rolling on the floor laughing my ass off"
+        }, {
+            "question": "What is the abbreviation TTYL short for?",
+            "type": "short-answer",
+            "answer": "Talk to you later"
+        }, {
+            "question": "What is the abbreviation LOL short for?",
+            "type": "short-answer",
+            "answer": "Laugh out loud"
+        }, {
+            "question": "What is the abbreviation IMHO short for?",
+            "type": "short-answer",
+            "answer": "In my humble opinion"
+        }, {
+            "question": "What is the abbreviation HAND short for?",
+            "type": "short-answer",
+            "answer": "Have a nice day"
+        }, {
+            "question": "What is the abbreviation YOLO short for?",
+            "type": "short-answer",
+            "answer": "You only live once"
+        }, {
+            "question": "What is the abbreviation PPL short for?",
+            "type": "short-answer",
+            "answer": "People"
+        }, {
+            "question": "What is the abbreviation IRL short for?",
+            "type": "short-answer",
+            "answer": "In real life"
+        }]
+    }, {
+        "name": "Terminal Round 🖥",
+        "questions": [{
+            "question": "What does the command CD stand for?",
+            "type": "short-answer",
+            "answer": "Change directory"
+        }, {
+            "question": "What command would you use if you wanted more information about another Terminal command?",
+            "type": "short-answer",
+            "answer": "Man"
+        }, {
+            "question": "What command can you use to display the last 10 lines of input?",
+            "type": "short-answer",
+            "answer": "Tail"
+        }, {
+            "question": "What does BASH stand for?",
+            "type": "short-answer",
+            "answer": "Bourne Again Shell"
+        }, {
+            "question": "What is the name of the default shell that comes with macOS Catalina?",
+            "type": "short-answer",
+            "answer": "ZSH"
+        }, {
+            "question": "The Terminal is the name of a 2004 comedy starring which actor?",
+            "type": "short-answer",
+            "answer": "Tom Hanks"
+        }, {
+            "question": "What is name of the constant speed that a freely falling object eventually reaches when the resistance of the medium through which it is falling prevents further acceleration?",
+            "type": "short-answer",
+            "answer": "Terminal Velocity"
+        }, {
+            "question": "What is the terminal station on the Victoria line northbound?",
+            "type": "short-answer",
+            "answer": "Walthamstow"
+        }, {
+            "question": "What is the name of the shell provided with the Windows operating system?",
+            "type": "short-answer",
+            "answer": "DOS"
+        }, {
+            "question": "What is the name of the original Unix shell?",
+            "type": "short-answer",
+            "answer": "Thompson shell"
+        }]
+    }, {
+        "name": "Picture Round 🖼",
+        "questions": [{
+            "question": "Name the movie",
+            "type": "short-answer",
+            "image": "file://<path to image>.jpg",
+            "answer": "Creed"
+        }, {
+            "question": "Name the movie",
+            "type": "short-answer",
+            "image": "file://<path to image>.jpg",
+            "answer": "Terminator"
+        }]
+    }]
+}
