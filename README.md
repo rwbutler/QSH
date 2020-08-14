@@ -37,6 +37,34 @@ Table of contents:
 
 ## Usage
 
+### Packaging a Quiz
+
+```swift
+qsh package-quiz --input file://<path to quiz JSON> --encrypt-package --key <encryption key> --output file://<path to quiz package>
+```
+
+### Play a Quiz
+
+```swift
+qsh play-quiz --url <quiz package URL> --key <encryption key>  
+```
+
+### Help
+
+```swift
+qsh --help
+```
+
+Or to get help on a specific subcommand:
+
+```swift
+qsh package-quiz --help
+```
+
+```swift
+qsh play-quiz --help
+```
+
 ## Author
 
 [Ross Butler](https://github.com/rwbutler)
