@@ -12,6 +12,8 @@ This package is considered work in progress until reaching version 1.0.0.
 Table of contents:
 
 - [Features](#features)
+	- [Supported Features](#supported-features)
+	- [Upcoming Features](#upcoming-features)
 - [Usage](#usage)
 - [Author](#author)
 - [Additional Software](#additional-software)
