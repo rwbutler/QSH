@@ -236,18 +236,5 @@
             "type": "short-answer",
             "answer": "Thompson shell"
         }]
-    }, {
-        "name": "Picture Round 🖼",
-        "questions": [{
-            "question": "Name the movie",
-            "type": "short-answer",
-            "image": "file://<path to image>.jpg",
-            "answer": "Creed"
-        }, {
-            "question": "Name the movie",
-            "type": "short-answer",
-            "image": "file://<path to image>.jpg",
-            "answer": "Terminator"
-        }]
     }]
 }
