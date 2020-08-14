@@ -68,6 +68,18 @@ To install via [Homebrew](https://brew.sh) run the following command from the Te
 brew install rwbutler/tools/qsh
 ```
 
+Or build using [Swift Package Manager](https://github.com/apple/swift-package-manager):
+
+```bash
+swift build 
+```
+
+Then run using:
+
+```bash
+swift run qsh --help 
+```
+
 ## Usage
 
 ### Packaging a Quiz

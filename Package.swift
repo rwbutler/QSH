@@ -8,7 +8,7 @@ let package = Package(
     ],
     products: [
         .executable(
-            name: "QSH",
+            name: "qsh",
             targets: ["QSH"]
         )
     ],
