@@ -5,6 +5,10 @@
 
 QSH is the interactive shell for playing quizzes through the macOS Terminal.
 
+## ⚠️ Work In Progress
+
+This package is considered work in progress until reaching version 1.0.0.
+
 Table of contents:
 
 - [Features](#features)
