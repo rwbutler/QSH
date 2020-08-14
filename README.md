@@ -1,6 +1,7 @@
 ![QSH](https://github.com/rwbutler/QSH/raw/master/docs/images/qsh.png)
 
 [![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://swift.org/)
+![Platform](https://img.shields.io/badge/platform-macOS-lightgrey.svg)
 [![Twitter](https://img.shields.io/badge/twitter-@ross_w_butler-blue.svg?style=flat)](https://twitter.com/ross_w_butler)
 
 QSH is the interactive shell for playing quizzes through the macOS Terminal.
