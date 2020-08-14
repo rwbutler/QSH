@@ -1,19 +1,16 @@
 import Foundation
 import ArgumentParser
 
-struct SwiftQuiz: ParsableCommand {
+let applicationName = "QSH"
+let applicationVersion = "0.0.2"
+
+struct QSH: ParsableCommand {
     static var configuration = CommandConfiguration(
-        abstract: "Play quizzes from the CLI.",
-        version: "0.0.1",
+        abstract: "Interactive shell for playing quizzes through the macOS Terminal.",
+        version: applicationVersion,
         subcommands: [PackageQuiz.self, PlayQuiz.self],
         defaultSubcommand: PlayQuiz.self
     )
-}
-
-extension URL: ExpressibleByArgument {
-    public init?(argument: String) {
-        self.init(string: argument)
-    }
 }
 
 struct PlayQuiz: ParsableCommand {
@@ -29,7 +26,7 @@ struct PlayQuiz: ParsableCommand {
         quiz.eventCallback = { event in
             switch event {
             case .message(let message):
-                print("[QSH]: \(message)\n")
+                print("[\(applicationName)]: \(message)\n")
             case .quizComplete:
                 print("\(event.description)\n")
                 Self.exit(withError: nil)
@@ -49,7 +46,7 @@ struct PlayQuiz: ParsableCommand {
             }
         }
         print("---")
-        print("QSH")
+        print("\(applicationName)")
         print("---")
         quiz.startQuiz(key: key)
         RunLoop.main.run()
@@ -78,41 +75,4 @@ struct PackageQuiz: ParsableCommand {
     }
 }
 
-SwiftQuiz.main()
-
-struct AnyKey: CodingKey {
-    var stringValue: String
-    var intValue: Int?
-    
-    init?(stringValue: String) {
-        self.stringValue = stringValue
-        self.intValue = nil
-    }
-    
-    init?(intValue: Int) {
-        self.stringValue = String(intValue)
-        self.intValue = intValue
-    }
-}
-
-extension JSONDecoder.KeyDecodingStrategy {
-    
-    static let convertFromKebabCase = JSONDecoder.KeyDecodingStrategy.custom({ keys in
-        guard let lastComponent = keys.last?.stringValue.split(separator: ".").last,
-            lastComponent.contains("-") else {
-                return keys.last ?? AnyKey(stringValue: "")! // Try to return something non-nil.
-        }
-        let components = lastComponent.split(separator: "-")
-        var result: String
-        if let firstComponent = components.first {
-            let remainingComponents = components.dropFirst().map {
-                $0.capitalized
-            }
-            result = ([String(firstComponent)] + remainingComponents).joined()
-        } else {
-            result = String(lastComponent)
-        }
-        return AnyKey(stringValue: String(result))!
-    })
-    
-}
+QSH.main()
