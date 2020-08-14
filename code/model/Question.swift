@@ -12,7 +12,6 @@ enum Question: Codable {
         
     case multipleAnswer(_ multipleAnswer: MultipleAnswer)
     case multipleChoice(_ multipleChoice: MultipleChoice)
-    case pictureRound(_ pictureRound: PictureRound)
     case shortAnswer(_ shortAnswer: ShortAnswer)
     
     enum CodingKeys: String, CodingKey {
@@ -25,8 +24,6 @@ enum Question: Codable {
             self = .multipleAnswer(multipleAnswer)
         } else if let multipleChoice = try? container.decode(MultipleChoice.self, forKey: .question) {
             self = .multipleChoice(multipleChoice)
-        } else if let pictureRound = try? container.decode(PictureRound.self, forKey: .question) {
-            self = .pictureRound(pictureRound)
         } else if let shortAnswer = try? container.decode(ShortAnswer.self, forKey: .question) {
             self = .shortAnswer(shortAnswer)
         } else {
@@ -41,8 +38,6 @@ enum Question: Codable {
             try container.encode(multipleAnswer, forKey: .question)
         case .multipleChoice(let multipleChoice):
             try container.encode(multipleChoice, forKey: .question)
-        case .pictureRound(let pictureRound):
-            try container.encode(pictureRound, forKey: .question)
         case .shortAnswer(let shortAnswer):
             try container.encode(shortAnswer, forKey: .question)
         }
@@ -54,8 +49,6 @@ enum Question: Codable {
             return multipleAnswer.id
         case .multipleChoice(let multipleChoice):
             return multipleChoice.id
-        case .pictureRound(let pictureRound):
-            return pictureRound.id
         case .shortAnswer(let shortAnswer):
             return shortAnswer.id
         }
@@ -67,8 +60,6 @@ enum Question: Codable {
             return multipleAnswer.question
         case .multipleChoice(let multipleChoice):
             return multipleChoice.question
-        case .pictureRound(let pictureRound):
-            return pictureRound.question
         case .shortAnswer(let shortAnswer):
             return shortAnswer.question
         }
@@ -80,8 +71,6 @@ enum Question: Codable {
             return multipleAnswer.image
         case .multipleChoice(let multipleChoice):
             return multipleChoice.image
-        case .pictureRound(let pictureRound):
-            return pictureRound.images.first
         case .shortAnswer(let shortAnswer):
             return shortAnswer.image
         }

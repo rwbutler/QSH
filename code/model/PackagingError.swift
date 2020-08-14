@@ -11,6 +11,5 @@ import Foundation
 public enum PackagingError: Error {
     case invalidQuestionType
     case multipleChoiceQuestionMissingChoices
-    case pictureRoundMissingImages
     case questionMissingAnswer
 }

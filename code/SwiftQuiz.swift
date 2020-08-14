@@ -438,21 +438,6 @@ struct QuizFactory {
                         scoring: scoring
                     )
                     return .multipleAnswer(multipleAnswer)
-                case "picture-round":
-                    let imageData = try questionModel.images?.compactMap {
-                        return try imageDataSync(url: $0)
-                    }
-                    guard let answers = questionModel.answers,
-                        let images = imageData else {
-                            throw PackagingError.pictureRoundMissingImages
-                    }
-                    let pictureRound = PictureRound(
-                        id: UUID(),
-                        answers: answers,
-                        images: images,
-                        question: questionModel.question
-                    )
-                    return .pictureRound(pictureRound)
                 default:
                     throw PackagingError.invalidQuestionType
                 }
