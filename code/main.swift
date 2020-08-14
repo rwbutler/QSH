@@ -73,12 +73,8 @@ struct PackageQuiz: ParsableCommand {
     func run() throws {
         let quizData = try Data(contentsOf: input)
         // TODO: Handle result.
-        do {
-            let result = Main.packageQuiz(jsonData: quizData, key: key, output: output)
-            print(result)
-        } catch let error {
-            print(error)
-        }
+        let result = Main.packageQuiz(jsonData: quizData, key: key, output: output)
+        print(result)
     }
 }
 
