@@ -7,6 +7,7 @@
 
 import Foundation
 import ArgumentParser
+import SwiftQuiz
 
 struct PlayQuiz: ParsableCommand {
     
@@ -17,7 +18,7 @@ struct PlayQuiz: ParsableCommand {
     var key: String?
     
     func run() throws {
-        let quiz = Main(quizURL: url)
+        let quiz = SwiftQuiz(quizURL: url)
         quiz.eventCallback = { event in
             switch event {
             case .message(let message):

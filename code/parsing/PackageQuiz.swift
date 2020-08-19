@@ -7,6 +7,7 @@
 
 import Foundation
 import ArgumentParser
+import SwiftQuiz
 
 struct PackageQuiz: ParsableCommand {
     
@@ -26,7 +27,7 @@ struct PackageQuiz: ParsableCommand {
     func run() throws {
         let quizData = try Data(contentsOf: input)
         // TODO: Handle result.
-        let result = Main.packageQuiz(jsonData: quizData, key: key, output: output)
+        let result = SwiftQuiz.packageQuiz(jsonData: quizData, key: key, output: output)
         print(result)
     }
     
