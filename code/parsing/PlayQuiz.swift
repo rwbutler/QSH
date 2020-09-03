@@ -19,7 +19,7 @@ struct PlayQuiz: ParsableCommand {
     
     func run() throws {
         let quiz = SwiftQuiz(quizURL: url)
-        quiz.eventCallback = { event in
+        quiz.eventCallbacks.append({ event in
             switch event {
             case .message(let message):
                 print("[\(applicationName)]: \(message)\n")
@@ -34,13 +34,13 @@ struct PlayQuiz: ParsableCommand {
             default:
                 print("\(event)\n")
             }
-        }
-        quiz.errorCallback = { error in
+        })
+        quiz.errorCallbacks.append({ error in
             print("\(error.localizedDescription)\n")
             if let input = readLine() {
                 quiz.processCommand(Command(rawValue: input))
             }
-        }
+        })
         print("---")
         print("\(applicationName)")
         print("---")
