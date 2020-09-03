@@ -54,10 +54,10 @@ To package an example quiz:
 - [x] Picture round questions
 - [x] Encrypts quiz packages making it harder to cheat.
 - [x] Manual marking via sending answers to Slack via a web hook URL
+- [x] Automatic marking
 
 ### Upcoming Features
 
-- [ ] Automatic marking
 - [ ] Multiple answer questions
 - [ ] Multiple choice questions
 - [ ] Keep participants in sync without the need for a server
