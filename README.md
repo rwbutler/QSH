@@ -36,20 +36,20 @@ Table of contents:
 To play an example quiz:
 
 ```bash
-qsh --url "https://raw.githubusercontent.com/rwbutler/QSH/master/examples/example.quiz" --key "A%D*F-JaNdRgUkXp2s5v8y/B?E(H+KbP"
+qsh --url https://github.com/rwbutler/QSH/raw/master/examples/example-playable-quiz.quiz --key A%D*F-JaNdRgUkXp2s5v8y/B?E(H+KbP
 ```
 
 Or:
 
 ```bash
-qsh --url https://github.com/rwbutler/qsh/raw/master/example-playable-quiz2.quiz --key cQfTjWnZr4u7x!A%C*F-JaNdRgUkXp2s
+qsh --url https://github.com/rwbutler/QSH/raw/master/examples/example-playable-quiz2.quiz --key A%D*F-JaNdRgUkXp2s5v8y/B?E(H+KbP
 ```
 
 
 To package an example quiz:
 
 ```bash
- qsh package-quiz --input "https://raw.githubusercontent.com/rwbutler/QSH/master/examples/quiz.json" --encrypt-package --key "A%D*F-JaNdRgUkXp2s5v8y/B?E(H+KbP" --output "file://<output path>"
+ qsh package-quiz --input "https://raw.githubusercontent.com/rwbutler/QSH/master/examples/example-quiz-input.json" --encrypt-package --key "A%D*F-JaNdRgUkXp2s5v8y/B?E(H+KbP" --output "file://<output path>"
 ```
 
 ## Features
