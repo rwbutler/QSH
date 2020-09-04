@@ -45,12 +45,15 @@ Or:
 qsh --url https://github.com/rwbutler/QSH/raw/master/examples/example-playable-quiz2.quiz --key A%D*F-JaNdRgUkXp2s5v8y/B?E(H+KbP
 ```
 
+Note: Accepts both HTTP and file URLs which must be proceeded by `file://` e.g. `qsh --url file:///Users/username/Documents/example-playable-quiz.quiz`.
 
 To package an example quiz:
 
 ```bash
  qsh package-quiz --input "https://raw.githubusercontent.com/rwbutler/QSH/master/examples/example-quiz-input.json" --encrypt-package --key "A%D*F-JaNdRgUkXp2s5v8y/B?E(H+KbP" --output "file://<output path>"
 ```
+
+Note: Accepts both HTTP and file URLs which must be proceeded by `file://` e.g. `qsh package-quiz --url file:///Users/username/Documents/quiz-input.json`.
 
 ## Features
 
