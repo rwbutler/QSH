@@ -39,6 +39,13 @@ To play an example quiz:
 qsh --url "https://raw.githubusercontent.com/rwbutler/QSH/master/examples/example.quiz" --key "A%D*F-JaNdRgUkXp2s5v8y/B?E(H+KbP"
 ```
 
+Or:
+
+```bash
+qsh --url https://github.com/rwbutler/qsh/raw/master/example-playable-quiz2.quiz --key cQfTjWnZr4u7x!A%C*F-JaNdRgUkXp2s
+```
+
+
 To package an example quiz:
 
 ```bash
@@ -88,6 +95,22 @@ swift run qsh --help
 
 ```bash
 qsh package-quiz --input file://<path to quiz JSON> --encrypt-package --key <encryption key> --output file://<path to quiz package>
+```
+
+#### Automatic Marking
+
+In order to enable automatic marking for a quiz, add the following to your quiz JSON file:
+
+```json
+"marking-occurs": "at-end",
+```
+
+Take a look [here](https://github.com/rwbutler/QSH/blob/master/examples/quiz.json) for an example.
+
+Alternatively, if you want to mark the old-fashioned way by swapping answers then simply set the `marking-occurs` property to `never`:
+
+```json
+"marking-occurs": "never",
 ```
 
 ### Play a Quiz

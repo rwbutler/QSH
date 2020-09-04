@@ -1,6 +1,6 @@
 {
-    "title": "The Quiz",
-    "marking-occurs": "at-end",
+    "title": "Example Quiz",
+    "marking-occurs": "at-quiz-end",
     "rounds": [{
         "name": "Setup",
         "questions": [{

@@ -1,0 +1,223 @@
+{
+    "title": "Example Quiz 2",
+    "marking-occurs": "at-quiz-end",
+    "rounds": [{
+        "name": "Setup",
+        "questions": [{
+            "question": "Enter your name:",
+            "type": "short-answer",
+            "answer": "Any"
+        }]
+    }, {
+        "name": "Cocktail Round 🍸",
+        "questions": [{
+            "question": "Which cocktail is made with vodka, triple sec, cranberry juice, and freshly squeezed or sweetened lime juice?",
+            "type": "short-answer",
+            "answer": "Cosmopolitan"
+        }, {
+            "question": "Which cocktail consists of tequila, orange liqueur, and lime juice often served with salt on the rim of the glass?",
+            "type": "short-answer",
+            "answer": "Margarita"
+        }, {
+            "question": "Which cocktail is made from gin, lemon juice, sugar, and carbonated water?",
+            "type": "short-answer",
+            "answer": "Tom Collins"
+        }, {
+            "question": "Which mixed drink is made with bourbon, lemon juice, a teaspoon of sugar, and an optional egg white?",
+            "type": "short-answer",
+            "answer": "Whiskey Sour"
+        }, {
+            "question": "Which traditional Cuban highball consists of white rum, lime juice, sugar, soda water, and mint?",
+            "type": "short-answer",
+            "answer": "Mojito"
+        }, {
+            "question": "What is the name of the cocktail made with gin, vodka, white Lillet, Angostura bitters and lemon zest that James Bond invents in Casino Royale?",
+            "type": "short-answer",
+            "answer": "Vesper"
+        }, {
+            "question": "What flavour is Chambord liquor?",
+            "type": "short-answer",
+            "answer": "Raspberry"
+        }, {
+            "question": "Which key ingredient is missing for a Long Island Ice Tea - Gin, Vodka, White Rum, Cointreau, Lemon Juice, Dash of Cola, Lemon Wedge?",
+            "type": "short-answer",
+            "answer": "Tequila"
+        }, {
+            "question": "Which cocktail is vodka and coffee liqueur?",
+            "type": "short-answer",
+            "answer": "Black Russian"
+        }, {
+            "question": "What would you call a beer cocktail made from Guinness and Champagne?",
+            "type": "short-answer",
+            "answer": "Black Velvet"
+        }]
+    }, {
+        "name": "London Round 🇬🇧",
+        "questions": [{
+            "question": "Who became Mayor of London in May 2016?",
+            "type": "short-answer",
+            "answer": "Sadiq Khan"
+        }, {
+            "question": "Opened in 1987, what does the acronym DLR stand for?",
+            "type": "short-answer",
+            "answer": "Docklands Light Railway"
+        }, {
+            "question": "Opened in 1979, which is the newest line on the London Underground network?",
+            "type": "short-answer",
+            "answer": "Jubilee"
+        }, {
+            "question": "Which Second World War museum ship is permanently moored on the River Thames?",
+            "type": "short-answer",
+            "answer": "HMS Belfast"
+        }, {
+            "question": "The Shaftesbury Memorial Fountain is located at the southeastern side of which public space?",
+            "type": "short-answer",
+            "answer": "Picadilly Circus"
+        }, {
+            "question": "The Theatre Royal, in Covent Garden, backs onto which street?",
+            "type": "short-answer",
+            "answer": "Drury Lane"
+        }, {
+            "question": "Which area of London is believed to derive its name from a former hunting cry?",
+            "type": "short-answer",
+            "answer": "Soho"
+        }, {
+            "question": "Where is the burial place of Michael Faraday, John Galsworthy and author Douglas Adams?",
+            "type": "short-answer",
+            "answer": "Highgate Cemetery"
+        }, {
+            "question": "Which London park is famous for its Speakers' Corner?",
+            "type": "short-answer",
+            "answer": "Hyde Park"
+        }, {
+            "question": "Name the large area off Whitehall which is the site of the annual Trooping the Colour?",
+            "type": "short-answer",
+            "answer": "Horse Guards Parade"
+        }]
+    }, {
+        "name": "iPhone Round 📱",
+        "questions": [{
+            "question": "Which iPhone model was released in the color bright green?",
+            "type": "short-answer",
+            "answer": "iPhone 5C"
+        }, {
+            "question": "Which was the first iPhone model to use Lightning cables?",
+            "type": "short-answer",
+            "answer": "iPhone 5"
+        }, {
+            "question": "Which was the first iPhone model released in gold?",
+            "type": "short-answer",
+            "answer": "iPhone 5S"
+        }, {
+            "question": "What version of the iPhone's OS introduced cut-and-paste functionality?",
+            "type": "short-answer",
+            "answer": "3"
+        }, {
+            "question": "What codename did Apple employees use to the iPhone before it was announced?",
+            "type": "short-answer",
+            "answer": "Project Purple"
+        }, {
+            "question": "Which model of iPhone was the first to have Touch ID?",
+            "type": "short-answer",
+            "answer": "iPhone 5S"
+        }, {
+            "question": " The Digital Rights Management system on the iPhone was broken by a group of hackers, which allowed for other non-Apple applications to be installed onto the devices. By what name is such a cracking of Digital Rights Management better-known?",
+            "type": "short-answer",
+            "answer": "Jailbreak"
+        }, {
+            "question": "A similar handheld device is also available from Apple that has most features that the iPhone has, minus the telephone. What is the name of this device?",
+            "type": "short-answer",
+            "answer": " iPod Touch"
+        }, {
+            "question": "What major new feature was introduced in the iPhone X?",
+            "type": "short-answer",
+            "answer": "Face ID"
+        }, {
+            "question": "Who portrayed the Apple CEO in the 2015 movie Steve Jobs?",
+            "type": "short-answer",
+            "answer": "Michael Fassbender"
+        }]
+    }, {
+        "name": "Sci-Fi Round 👽",
+        "questions": [{
+            "question": "Which popular TV show had characters named Fox Mulder and Dana Scully?",
+            "type": "short-answer",
+            "answer": "The X-Files"
+        }, {
+            "question": "Captain James Kirk is the most famous Captain of the USS Enterprise in Star Trek – but who had the job before him in the TV series?",
+            "type": "short-answer",
+            "answer": "Captain Christopher Pike"
+        }, {
+            "question": "What is the superhero alter-ego of the character Billy Batson?",
+            "type": "short-answer",
+            "answer": "Shazam"
+        }, {
+            "question": "In Game of Thrones, what is the name of Westeros’ capital city?",
+            "type": "short-answer",
+            "answer": "King’s Landing"
+        }, {
+            "question": "Which superhero is both a Marvel and a DC character?",
+            "type": "short-answer",
+            "answer": "Captain Marvel"
+        }, {
+            "question": "What exactly is Deep Space Nine in the television series Star Trek: Deep Space Nine?",
+            "type": "short-answer",
+            "answer": "Spacestation"
+        }, {
+            "question": "In the Alien movie series, what is the name of Ellen Ripley’s pet cat?",
+            "type": "short-answer",
+            "answer": "Jonesy"
+        }, {
+            "question": "Robin is the sidekick to DC's Batman, but what is his true name?",
+            "type": "short-answer",
+            "answer": "Dick Grayson"
+        }, {
+            "question": "Where were Peter Jackson’s Lord of the Rings movies filmed?",
+            "type": "short-answer",
+            "answer": "New Zealand"
+        }, {
+            "question": "Complete the following famous quote from the TV series Lost in Space: “Danger ____ _____.”",
+            "type": "short-answer",
+            "answer": "Will Robinson"
+        }]
+    }, {
+        "name": "Technology Round 🤖",
+        "questions": [{
+            "question": "What does HTML stand for?",
+            "type": "short-answer",
+            "answer": "Hyper Text Markup Language"
+        }, {
+            "question": "One loop inside the body of another loop is called ",
+            "type": "short-answer",
+            "answer": "Nested"
+        }, {
+            "question": "In C what command is used to output text to the console?",
+            "type": "short-answer",
+            "answer": "Cout"
+        }, {
+            "question": "What technology is used to record cryptocurrency transactions?",
+            "type": "short-answer",
+            "answer": "Blockchain"
+        }, {
+            "question": "What kind of malware is designed to take advantage of a security hole before it is known?",
+            "type": "short-answer",
+            "answer": "Zero-day exploit"
+        }, {
+            "question": "What does acronym FOSS stand for?",
+            "type": "short-answer",
+            "answer": "Free and Open-Source Software"
+        }, {
+            "question": "What technology is used to make telephone calls over the Internet possible?",
+            "type": "short-answer",
+            "answer": "VoIP"
+        }, {
+            "question": "What is the term for text that automatically continues from one line to the next?",
+            "type": "short-answer",
+            "answer": "Word wrapping"
+        }, {
+            "question": "IMAX is a contraction of which words?",
+            "type": "short-answer",
+            "answer": "Image Maximum"
+        }]
+    }]
+}
