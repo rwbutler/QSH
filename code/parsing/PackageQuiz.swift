@@ -18,7 +18,7 @@ struct PackageQuiz: ParsableCommand {
     var input: URL
     
     @Option(name: .shortAndLong, help: "Key for encrypting the quiz package.")
-    var key: String
+    var key: String?
     
     // TODO: Make optional.
     @Option(name: .shortAndLong, help: "Where to output the quiz package to.")

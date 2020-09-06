@@ -24,6 +24,8 @@ Table of contents:
 - [Installation](#installation)
 - [Usage](#usage)
 	- [Packaging a Quiz](#packaging-a-quiz)
+		- [Encrypted / Unencrypted Quiz Packages](#encrypted-unencrypted-quiz-packages)
+		- [Picture Rounds](#picture-round)
 	- [Play a Quiz](#play-a-quiz)
 	- [Help](#help)
 - [Author](#author)
@@ -100,7 +102,13 @@ swift run qsh --help
 qsh package-quiz --input file://<path to quiz JSON> --encrypt-package --key <encryption key> --output file://<path to quiz package>
 ```
 
-#### Picture Round
+Note: To generate an AES-256 encryption key use a site such as this [one](https://www.allkeysgenerator.com/Random/Security-Encryption-Key-Generator.aspx).
+ 
+#### Encrypted / Unencrypted Quiz Packages
+
+QSH allows quizzes to be encrypted so that the answers contained within the quiz package cannot be readily be accessed preventing cheating. Use of this feature is optional as quiz packages may be encrypted or unencrypted. In order to encrypt a quiz during packaging, supply a AES-256 key generated using a site such as the one [here](https://www.allkeysgenerator.com/Random/Security-Encryption-Key-Generator.aspx) using the `--key` parameter. If the `--key` parameter is omitted then an unencrypted quiz package will be generated.
+
+#### Picture Rounds
 
 To include a picture round as part of a quiz, include the parameter `image` as part of a short answer, multiple choice or multiple answer question. The value of the `image` parameter should be the URL (either a file URL or HTTP URL) of the image file. When the quiz is packaged, the image data will be included as part of the quiz package so that the images do not need to be downloaded separately at runtime.
 
