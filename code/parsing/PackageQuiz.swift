@@ -26,9 +26,7 @@ struct PackageQuiz: ParsableCommand {
     
     func run() throws {
         let quizData = try Data(contentsOf: input)
-        // TODO: Handle result.
-        let result = SwiftQuiz.packageQuiz(jsonData: quizData, key: key, output: output)
-        print(result)
+        print(SwiftQuiz.packageQuiz(jsonData: quizData, key: key, output: output))
     }
     
 }

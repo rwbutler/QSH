@@ -6,6 +6,8 @@
 
 QSH is the interactive shell for playing quizzes through the macOS Terminal.
 
+It is built on top of [Swift Quiz](https://github.com/rwbutler/swift-quiz) which provides the core functionality for making and playing quizzes in Swift. QSH provides the UI for accessing all of that functionality using the macOS Terminal.
+
 <br/>
 <div align="center">
     <img src="https://github.com/rwbutler/QSH/raw/master/docs/images/screenshot.png" alt="QSH screenshot" width="80%">
@@ -28,6 +30,7 @@ Table of contents:
 		- [Picture Rounds](#picture-round)
 	- [Play a Quiz](#play-a-quiz)
 	- [Help](#help)
+- [Developing a Quiz Client](#developing-a-quiz-client)
 - [Author](#author)
 - [Additional Software](#additional-software)
 	- [Frameworks](#frameworks)
@@ -35,7 +38,7 @@ Table of contents:
 
 ## Quickstart
 
-To play an example quiz:
+### To play an example quiz:
 
 ```bash
 qsh --url https://github.com/rwbutler/QSH/raw/master/examples/example-playable-quiz.quiz --key A%D*F-JaNdRgUkXp2s5v8y/B?E(H+KbP
@@ -49,7 +52,7 @@ qsh --url https://github.com/rwbutler/QSH/raw/master/examples/example-playable-q
 
 Note: Accepts both HTTP and file URLs which must be proceeded by `file://` e.g. `qsh --url file:///Users/username/Documents/example-playable-quiz.quiz`.
 
-To package an example quiz:
+### To package an example quiz:
 
 ```bash
  qsh package-quiz --input "https://raw.githubusercontent.com/rwbutler/QSH/master/examples/example-quiz-input.json" --encrypt-package --key "A%D*F-JaNdRgUkXp2s5v8y/B?E(H+KbP" --output "file://<output path>"
@@ -63,15 +66,14 @@ Note: Accepts both HTTP and file URLs which must be proceeded by `file://` e.g. 
 
 - [x] Package quizzes for distribution
 - [x] Short answer questions
+- [x] Multiple answer questions
+- [x] Multiple choice questions
 - [x] Picture round questions
 - [x] Encrypts quiz packages making it harder to cheat.
 - [x] Manual marking via sending answers to Slack via a web hook URL
 - [x] Automatic marking
 
 ### Upcoming Features
-
-- [ ] Multiple answer questions
-- [ ] Multiple choice questions
 - [ ] Keep participants in sync without the need for a server
 
 ## Installation
@@ -134,6 +136,8 @@ Alternatively, if you want to mark the old-fashioned way by swapping answers the
 qsh play-quiz --url <quiz package URL> --key <encryption key>  
 ```
 
+Note: The `key` parameter is only required for encrypted packages. 
+
 ### Help
 
 ```bash
@@ -149,6 +153,9 @@ qsh package-quiz --help
 ```bash
 qsh play-quiz --help
 ```
+
+## Developing a Quiz Client
+The core functionality for packaging and playing quizzes is implemented by the [Swift Quiz](https://github.com/rwbutler/swift-quiz) package with QSH providing the UI for the macOS Terminal. Should you wish to build your own client for playing quizzes e.g. using Linux, in theory you could do so using [Swift Quiz](https://github.com/rwbutler/swift-quiz).
 
 ## Author
 
