@@ -18,7 +18,7 @@ struct PlayQuiz: ParsableCommand {
     var key: String?
     
     func run() throws {
-        let quiz = SwiftQuiz(quizURL: url)
+        let quiz = SwiftQuiz(url: url)
         quiz.eventCallbacks.append({ event in
             switch event {
             case .message(let message):
