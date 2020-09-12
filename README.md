@@ -24,6 +24,9 @@ Table of contents:
 	- [Supported Features](#supported-features)
 	- [Upcoming Features](#upcoming-features)
 - [Installation](#installation)
+	- [Homebrew](#homebrew)
+	- [Mint](#mint)
+	- [Swift Package Manager](#swift-package-manager)
 - [Usage](#usage)
 	- [Packaging a Quiz](#packaging-a-quiz)
 		- [Encrypted / Unencrypted Quiz Packages](#encrypted-unencrypted-quiz-packages)
@@ -65,10 +68,8 @@ Note: Accepts both HTTP and file URLs which must be proceeded by `file://` e.g. 
 ### Supported Features
 
 - [x] Package quizzes for distribution
-- [x] Short answer questions
-- [x] Multiple answer questions
-- [x] Multiple choice questions
-- [x] Picture round questions
+- [x] Short answer questions, multiple answer questions and multiple choice questions
+- [x] Picture rounds
 - [x] Encrypts quiz packages making it harder to cheat.
 - [x] Manual marking via sending answers to Slack via a web hook URL
 - [x] Automatic marking
@@ -78,16 +79,28 @@ Note: Accepts both HTTP and file URLs which must be proceeded by `file://` e.g. 
 
 ## Installation
 
+### Homebrew
+
 To install via [Homebrew](https://brew.sh) run the following command from the Terminal:
 
 ```bash
 brew install rwbutler/tools/qsh
 ```
 
-Or build using [Swift Package Manager](https://github.com/apple/swift-package-manager):
+### Mint
+
+To install using [Mint](https://github.com/yonaskolb/Mint) run the following command:
 
 ```bash
-swift build 
+mint install rwbutler/qsh 
+```
+
+### Swift Package Manager
+
+Build using [Swift Package Manager](https://github.com/apple/swift-package-manager) as follows:
+
+```bash
+swift build -c release --disable-sandbox 
 ```
 
 Then run using:
