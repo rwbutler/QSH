@@ -26,7 +26,12 @@ struct PlayQuiz: ParsableCommand {
             case .quizComplete:
                 print("\(event.description)\n")
                 Self.exit(withError: nil)
-            case .keyRequired, .question:
+            case .question(let question):
+                print("\(question.description)")
+                if let input = readLine() {
+                    quiz.processCommand(Command(rawValue: input.trimmingCharacters(in: .whitespacesAndNewlines)))
+                }
+            case .keyRequired:
                 print("\(event.description)")
                 if let input = readLine() {
                     quiz.processCommand(Command(rawValue: input.trimmingCharacters(in: .whitespacesAndNewlines)))
