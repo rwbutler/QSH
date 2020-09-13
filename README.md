@@ -6,7 +6,7 @@
 
 QSH is the interactive shell for playing quizzes through the macOS Terminal.
 
-It is built on top of [Swift Quiz](https://github.com/rwbutler/swift-quiz) which provides the core functionality for making and playing quizzes in Swift. QSH provides the UI for accessing all of that functionality using the macOS Terminal.
+It is built on top of [SwiftQuiz](https://github.com/rwbutler/swift-quiz) which provides the core functionality for making and playing quizzes in Swift. QSH provides the UI for accessing all of that functionality using the macOS Terminal.
 
 <br/>
 <div align="center">
